@@ -1,0 +1,62 @@
+2026-11-22 01:52:11 | INFO     | software_fj | === INICIO DE LA SIMULACIÓN DE SOFTWARE FJ ===
+2026-11-22 01:52:11 | INFO     | software_fj | Registro de cliente 'ana maría gómez' OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Registro de cliente 'ana maría gómez'
+2026-11-22 01:52:11 | ERROR    | software_fj | Registro de cliente 'Pedro Ruiz' FALLÓ -> ClienteInvalidoError: Correo electrónico inválido: 'pedro-correo.com'.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Registro de cliente 'Pedro Ruiz'
+2026-11-22 01:52:11 | ERROR    | software_fj | Registro de cliente 'Luisa Torres' FALLÓ -> ParametroFaltanteError: Falta el parámetro obligatorio: 'documento'.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Registro de cliente 'Luisa Torres'
+2026-11-22 01:52:11 | INFO     | software_fj | Registro de cliente 'Carlos Mejía' OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Registro de cliente 'Carlos Mejía'
+2026-11-22 01:52:11 | INFO     | software_fj | Creación de servicio tipo 'sala' OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de servicio tipo 'sala'
+2026-11-22 01:52:11 | INFO     | software_fj | Creación de servicio tipo 'equipo' OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de servicio tipo 'equipo'
+2026-11-22 01:52:11 | ERROR    | software_fj | Creación de servicio tipo 'asesoria' FALLÓ -> ServicioInvalidoError: Nivel de asesor inválido 'maestro'. Opciones: junior, senior, experto.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de servicio tipo 'asesoria'
+2026-11-22 01:52:11 | INFO     | software_fj | Creación de servicio tipo 'asesoria' OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de servicio tipo 'asesoria'
+2026-11-22 01:52:11 | ERROR    | software_fj | Creación de servicio tipo 'catering' FALLÓ -> ServicioInvalidoError: Tipo de servicio desconocido 'catering'. Opciones: sala, equipo, asesoria.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de servicio tipo 'catering'
+2026-11-22 01:52:11 | INFO     | software_fj | Creación de servicio tipo 'equipo' OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de servicio tipo 'equipo'
+2026-11-22 01:52:11 | INFO     | software_fj | Creación de reserva (CLI-001, SRV-001, 3 h) OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de reserva (CLI-001, SRV-001, 3 h)
+2026-11-22 01:52:11 | ERROR    | software_fj | Creación de reserva (CLI-001, SRV-001, 20 h) FALLÓ -> ReservaInvalidaError: No se pudo crear la reserva de 'Sala Innovación': La duración 20 h supera el máximo permitido de 10 h para 'Sala Innovación'. | causa: ServicioInvalidoError: La duración 20 h supera el máximo permitido de 10 h para 'Sala Innovación'.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de reserva (CLI-001, SRV-001, 20 h)
+2026-11-22 01:52:11 | ERROR    | software_fj | Creación de reserva (CLI-999, SRV-001, 2 h) FALLÓ -> ReservaInvalidaError: Cliente 'CLI-999' no existe.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de reserva (CLI-999, SRV-001, 2 h)
+2026-11-22 01:52:11 | ERROR    | software_fj | Creación de reserva (CLI-002, SRV-004, 4 h) FALLÓ -> ServicioNoDisponibleError: El servicio 'Proyector 4K' no está disponible.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de reserva (CLI-002, SRV-004, 4 h)
+2026-11-22 01:52:11 | ERROR    | software_fj | Creación de reserva (CLI-002, SRV-003, 2.3 h) FALLÓ -> ReservaInvalidaError: No se pudo crear la reserva de 'Asesoría Seguridad': Las asesorías se reservan en múltiplos de 0.5 h (recibido: 2.3). | causa: ServicioInvalidoError: Las asesorías se reservan en múltiplos de 0.5 h (recibido: 2.3).
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de reserva (CLI-002, SRV-003, 2.3 h)
+2026-11-22 01:52:11 | INFO     | software_fj | Creación de reserva (CLI-002, SRV-003, 2.5 h) OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de reserva (CLI-002, SRV-003, 2.5 h)
+2026-11-22 01:52:11 | INFO     | software_fj | Creación de reserva (CLI-002, SRV-002, 24 h) OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Creación de reserva (CLI-002, SRV-002, 24 h)
+2026-11-22 01:52:11 | ERROR    | software_fj | Procesamiento de RES-001 FALLÓ -> OperacionNoPermitidaError: RES-001: solo se puede procesar una reserva confirmada (estado actual: Pendiente).
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Procesamiento de RES-001
+2026-11-22 01:52:11 | INFO     | software_fj | Reserva RES-001 confirmada.
+2026-11-22 01:52:11 | INFO     | software_fj | Confirmación de RES-001 OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Confirmación de RES-001
+2026-11-22 01:52:11 | INFO     | software_fj | Reserva RES-001 procesada. Costo final: $176,715.00
+2026-11-22 01:52:11 | DEBUG    | software_fj | Intento de procesamiento de RES-001 finalizado.
+2026-11-22 01:52:11 | INFO     | software_fj | Procesamiento de RES-001 OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Procesamiento de RES-001
+2026-11-22 01:52:11 | ERROR    | software_fj | Cancelación de RES-001 FALLÓ -> OperacionNoPermitidaError: RES-001: no se puede cancelar una reserva en estado Procesada.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Cancelación de RES-001
+2026-11-22 01:52:11 | INFO     | software_fj | Reserva RES-002 confirmada.
+2026-11-22 01:52:11 | INFO     | software_fj | Confirmación de RES-002 OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Confirmación de RES-002
+2026-11-22 01:52:11 | DEBUG    | software_fj | Intento de procesamiento de RES-002 finalizado.
+2026-11-22 01:52:11 | ERROR    | software_fj | Procesamiento de RES-002 FALLÓ -> ReservaInvalidaError: RES-002: error al calcular el costo de la reserva: Descuento 80% inválido (permitido: 0 a 50.0%). | causa: CalculoInconsistenteError: Descuento 80% inválido (permitido: 0 a 50.0%).
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Procesamiento de RES-002
+2026-11-22 01:52:11 | INFO     | software_fj | Reserva RES-002 procesada. Costo final: $248,062.50
+2026-11-22 01:52:11 | DEBUG    | software_fj | Intento de procesamiento de RES-002 finalizado.
+2026-11-22 01:52:11 | INFO     | software_fj | Procesamiento de RES-002 OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Procesamiento de RES-002
+2026-11-22 01:52:11 | INFO     | software_fj | Reserva RES-003 cancelada.
+2026-11-22 01:52:11 | INFO     | software_fj | Cancelación de RES-003 OK.
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Cancelación de RES-003
+2026-11-22 01:52:11 | ERROR    | software_fj | Confirmación de RES-003 FALLÓ -> OperacionNoPermitidaError: RES-003: solo se puede confirmar una reserva pendiente (estado actual: Cancelada).
+2026-11-22 01:52:11 | DEBUG    | software_fj | Fin de la operación: Confirmación de RES-003
+2026-11-22 01:52:11 | INFO     | software_fj | === FIN DE LA SIMULACIÓN: 14 éxitos, 12 errores ===
