@@ -33,4 +33,4 @@ El programa simula 26 operaciones (válidas e inválidas) y escribe todos los ev
 - **Excepciones:** personalizadas, `try/except`, `try/except/else`, `try/except/finally` y encadenamiento con `raise ... from`.
 
 ## Integrantes
-Completar con los nombres del grupo.
+Juan Carlos Yepes correa Fase 4 - Componente práctico: Prácticas simuladas 213023A_2204
